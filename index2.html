@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Git-Icon-Black.png" />
+    <title>GitHub Repositories Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="mb-4">GitHub Repositories Viewer</h1>
+
+    <div data-view-component="true" class="Layout-sidebar">      <div class="h-card mt-5" data-acv-badge-hovercards-enabled="" itemscope="" itemtype="http://schema.org/Person">
+
+        <div class="js-profile-editable-replace">
+<div class="clearfix d-flex d-md-block flex-items-center mb-4 mb-md-0">
+  <div class="position-relative d-inline-block col-2 col-md-12 mr-3 mr-md-0 flex-shrink-0" style="z-index:4;">
+      <a class="tooltipped tooltipped-s d-block" aria-label="Change your avatar" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;
+        :{&quot;profile_user_id&quot;:136890845,&quot;target&quot;:&quot;EDIT_AVATAR&quot;,&quot;user_id&quot;:136890845,&quot;
+           }}" data-hydro-click-hmac="6649ff45232f41f17d354faa010b0a1d850f01dfca70cdf7b2d1254bbc8f19ca"><img style="height:auto;" alt="" src="https://cdn-icons-png.flaticon.com/512/3675/3675760.png" width="150" height="150" class="avatar avatar-user width-full border color-bg-default"></a>
+           <a href="https://github.com/john_papa">https://github.com/john_papa</a>
+
+<br />
+<br />
+<br />
+
+    <div class="form-group">
+        <label for="username">Enter GitHub Username:</label>
+        <input type="text" id="username" class="form-control" placeholder="e.g., johnpapa">
+    </div>
+
+    <div class="form-group">
+        <label for="perPage">Repositories per page:</label>
+        <select id="perPage" class="form-control">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+
+    <button class="btn btn-primary" onclick="fetchRepositories()">Get Repositories</button>
+
+    <div id="loader" class="mt-4 d-none">
+        <img src="./1488.gif" alt="Loading...">
+    </div>
+
+    <ul id="repositories-list" class="list-group mt-4"></ul>
+
+    <div id="pagination-info" class="mt-4"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="app2.js"></script>
+</body>
+</html>
